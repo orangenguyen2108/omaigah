@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap');
+
+/* ══════════════════════════════════════════
+   BIẾN MÀU — TONE HỒNG KAWAII
+   ══════════════════════════════════════════ */
+:root {
+    --bg:           #fff5f7;
+    --bg-dot:       #f9c8d0;
+    --card:         #ffffff;
+    --pink-50:      #fff5f7;
+    --pink-100:     #fde8ec;
+    --pink-200:     #f9c8d0;
+    --pink-300:     #f5b8c4;
+    --pink-400:     #e8a0aa;
+    --pink-600:     #c97080;
+    --pink-800:     #8b3a4a;
+    --pink-900:     #7a2a3a;
+    --peach:        #F3B768;
+    --peach-soft:   #FAD9A6;
+    --blue-soft:    #D9E7F7;
+    --green-soft:   #E8F5E9;
+    --ink:          #7a2a3a;
+}
+
+/* ══════════════════════════════════════════
+   NỀN TỔNG — LƯỚI CHẤM HỒNG
+   ══════════════════════════════════════════ */
+html, body, [class*="css"] {
+    font-family: 'Nunito', sans-serif !important;
+    color: var(--ink) !important;
+}
+
+.stApp {
+    background-color: var(--bg) !important;
+    background-image: radial-gradient(var(--bg-dot) 1.2px, transparent 1.2px) !important;
+    background-size: 22px 22px !important;
+}
+
+/* ══════════════════════════════════════════
+   CHỮ — ĐẢM BẢO LUÔN HIỂN THỊ
+   ══════════════════════════════════════════ */
+p, span, label, li, div, .stMarkdown, .stText, .stCaption {
+    color: var(--ink);
+}
+
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif !important;
+    color: var(--pink-900) !important;
+    font-weight: 800 !important;
+}
+
+/* ══════════════════════════════════════════
+   NAVBAR BUTTONS
+   ══════════════════════════════════════════ */
+.stButton > button {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 13px !important;
+    background: var(--pink-100) !important;
+    color: var(--pink-800) !important;
+    border: 2px solid var(--pink-400) !important;
+    border-radius: 24px !important;
+    padding: 8px 16px !important;
+    box-shadow: 3px 3px 0 var(--pink-400) !important;
+    transition: all 0.15s ease !important;
+}
+.stButton > button:hover {
+    background: var(--pink-200) !important;
+    transform: translate(-1px, -1px) !important;
+    box-shadow: 4px 4px 0 var(--pink-400) !important;
+}
+.stButton > button:active {
+    transform: translate(1px, 1px) !important;
+    box-shadow: 1px 1px 0 var(--pink-400) !important;
+}
+.stButton > button[kind="primary"] {
+    background: var(--pink-300) !important;
+    border-color: var(--pink-600) !important;
+    box-shadow: 3px 3px 0 var(--pink-600) !important;
+}
+.stButton > button p {
+    color: var(--pink-800) !important;
+}
+
+/* ══════════════════════════════════════════
+   BROWSER CHROME (mockup trang trí app.py)
+   ══════════════════════════════════════════ */
+.browser-chrome {
+    background: var(--card);
+    border: 2.5px solid var(--pink-400);
+    border-radius: 16px;
+    margin: 4px 0 20px 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 0 var(--pink-200);
+}
+.browser-chrome .tabbar {
+    display: flex;
+    align-items: center;
+    background: var(--pink-300);
+    border-bottom: 2.5px solid var(--pink-400);
+    padding: 8px 12px 0 12px;
+}
+.browser-chrome .tab-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--card);
+    border: 2px solid var(--pink-400);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    padding: 6px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: var(--pink-800);
+}
+.browser-chrome .dots {
+    margin-left: auto;
+    font-size: 0.95rem;
+    padding-bottom: 6px;
+    letter-spacing: 4px;
+}
+.browser-chrome .addressbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--pink-100);
+    border-bottom: 2px solid var(--pink-400);
+    padding: 8px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--pink-800);
+}
+.browser-chrome .url-pill {
+    flex: 1;
+    background: white;
+    border: 2px solid var(--pink-400);
+    border-radius: 999px;
+    padding: 4px 14px;
+    color: #aaa;
+}
+.browser-chrome .preview {
+    background: var(--pink-200);
+    padding: 14px 18px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* ══════════════════════════════════════════
+   ĐƯỜNG KẺ ---
+   ══════════════════════════════════════════ */
+hr {
+    border: none !important;
+    border-top: 2px dashed var(--pink-400) !important;
+    margin: 0.4em 0 1.6em 0 !important;
+    opacity: 0.7;
+}
+
+/* ══════════════════════════════════════════
+   TABS
+   ══════════════════════════════════════════ */
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+    gap: 6px;
+    border-bottom: 2.5px solid var(--pink-400) !important;
+}
+[data-testid="stTabs"] button[role="tab"] {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+    background: var(--pink-100) !important;
+    border: 2px solid var(--pink-400) !important;
+    border-bottom: none !important;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 8px 20px;
+    color: var(--pink-800) !important;
+    transition: all 0.15s ease;
+}
+[data-testid="stTabs"] button[role="tab"]:hover {
+    background: var(--pink-200) !important;
+}
+[data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
+    background: var(--card) !important;
+    border-color: var(--pink-600) !important;
+    color: var(--pink-900) !important;
+}
+[data-testid="stTabs"] [data-baseweb="tab-highlight"],
+[data-testid="stTabs"] [data-baseweb="tab-border"] {
+    display: none !important;
+}
+
+/* ══════════════════════════════════════════
+   FILE UPLOADER
+   ══════════════════════════════════════════ */
+[data-testid="stFileUploader"] section {
+    background: var(--card) !important;
+    border: 2.5px dashed var(--pink-400) !important;
+    border-radius: 16px !important;
+    padding: 16px;
+}
+[data-testid="stFileUploaderDropzone"] button {
+    background: var(--pink-300) !important;
+    color: var(--pink-800) !important;
+    font-weight: 800 !important;
+    border-radius: 20px !important;
+    border: 2px solid var(--pink-400) !important;
+}
+
+/* ══════════════════════════════════════════
+   ẢNH TẢI LÊN
+   ══════════════════════════════════════════ */
+[data-testid="stImage"] img {
+    border-radius: 16px;
+    border: 2.5px solid var(--pink-400);
+    box-shadow: 5px 5px 0 var(--pink-200);
+}
+
+/* ══════════════════════════════════════════
+   METRIC CARD (kết quả AI)
+   ══════════════════════════════════════════ */
+[data-testid="stMetric"] {
+    background: var(--card);
+    border: 2.5px solid var(--pink-400);
+    border-radius: 16px;
+    padding: 18px 22px;
+    position: relative;
+    box-shadow: 5px 5px 0 var(--pink-200);
+}
+[data-testid="stMetric"]::before {
+    content: "";
+    position: absolute;
+    top: -2.5px; right: -2.5px;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 0 24px 24px 0;
+    border-color: transparent var(--pink-300) transparent transparent;
+}
+[data-testid="stMetricLabel"] {
+    color: var(--pink-600) !important;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800 !important;
+    font-size: 0.85rem !important;
+}
+[data-testid="stMetricValue"] {
+    color: var(--pink-900) !important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800 !important;
+}
+
+/* ══════════════════════════════════════════
+   ALERT / INFO / WARNING
+   ══════════════════════════════════════════ */
+div[data-testid="stAlert"] {
+    background: var(--pink-100) !important;
+    border-radius: 14px !important;
+    border: 2px solid var(--pink-400) !important;
+    box-shadow: 3px 3px 0 var(--pink-200);
+}
+div[data-testid="stAlert"] p,
+div[data-testid="stAlert"] li,
+div[data-testid="stAlert"] strong {
+    color: var(--pink-800) !important;
+}
+
+/* info xanh dương */
+div[data-testid="stAlert"][data-baseweb="notification"] {
+    background: var(--blue-soft) !important;
+}
+
+/* success xanh lá */
+div[data-testid="stAlert"].st-success {
+    background: var(--green-soft) !important;
+}
+
+/* ══════════════════════════════════════════
+   PROGRESS BAR
+   ══════════════════════════════════════════ */
+[data-testid="stProgress"] div[role="progressbar"] > div {
+    background: var(--pink-400) !important;
+    border-radius: 999px !important;
+}
+[data-testid="stProgress"] div[role="progressbar"] {
+    background: var(--pink-100) !important;
+    border: 2px solid var(--pink-400) !important;
+    border-radius: 999px !important;
+}
+
+/* ══════════════════════════════════════════
+   EXPANDER
+   ══════════════════════════════════════════ */
+[data-testid="stExpander"] {
+    border: 2px solid var(--pink-400) !important;
+    border-radius: 14px !important;
+    overflow: hidden;
+    background: var(--card) !important;
+}
+[data-testid="stExpander"] summary {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    background: var(--pink-100) !important;
+    color: var(--pink-800) !important;
+}
+
+/* ══════════════════════════════════════════
+   DATAFRAME / BẢNG
+   ══════════════════════════════════════════ */
+[data-testid="stDataFrame"] {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 2px solid var(--pink-400);
+}
+
+/* ══════════════════════════════════════════
+   SPINNER
+   ══════════════════════════════════════════ */
+[data-testid="stSpinner"] p {
+    color: var(--pink-800) !important;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+/* ══════════════════════════════════════════
+   CAPTION / CHÚ THÍCH
+   ══════════════════════════════════════════ */
+[data-testid="stCaptionContainer"] {
+    color: var(--pink-600) !important;
+    font-size: 0.85rem !important;
+    opacity: 0.8;
+}
+
+/* ══════════════════════════════════════════
+   BAR CHART
+   ══════════════════════════════════════════ */
+[data-testid="stVegaLiteChart"] canvas,
+[data-testid="stArrowVegaLiteChart"] {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* ══════════════════════════════════════════
+   FOOTER CHUNG
+   ══════════════════════════════════════════ */
+.custom-footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--pink-600);
+    font-size: 13px;
+    margin-top: 30px;
+    border-top: 2px dashed var(--pink-400);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
